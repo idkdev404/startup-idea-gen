@@ -1,0 +1,56 @@
+/* .main-main-part2{
+    position: relative;
+    top: 170px;
+    height: 75vh;
+    overflow-y: scroll;
+} */
+
+.main-part2{
+    position: relative;
+    top: 230px;
+    
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-basis: content;
+    flex-wrap: wrap;
+    animation: epicAppearance 1s;
+    z-index: 2;
+}
+
+
+.displayNone{
+    display: none;
+}
+
+.main-part2 div{
+    height: 90%;
+    flex-basis: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s;
+    user-select: none;
+}
+.main-part2 div:hover{
+    transform: scale(1.05);
+}
+
+.main-part2 div img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+}
+
+@keyframes epicAppearance {
+    from{
+        margin-left: 2000px;
+    }
+    to{
+        margin-left: 0;
+    }
+}
