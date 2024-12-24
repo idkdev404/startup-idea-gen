@@ -1,0 +1,46 @@
+/* ANIMATIONS FOR LARGE VERSION */
+
+@keyframes hands{
+    from{
+        left: -775px;
+    }
+    to{
+        left: -35px;
+    }
+}
+@keyframes hands2{
+    from{
+        right: -775px;
+    }
+    to{
+        right: -35px;
+    }
+}
+@keyframes headerDown{
+    from{
+        top: 5%;
+    }
+    to{
+        top: 25%;
+    }
+}
+
+/* ANIMATIONS FOR SMALL VERSION */
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+}
+
+@keyframes slideUp {
+    0%{
+        top: 100%;
+    }
+    100%{
+        top: 56%;
+    }
+}
+
