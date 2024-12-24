@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasser Tadili Portfolio</title>
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./keyframes.css">
+    <link rel="stylesheet" href="./part2.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/gdw7tsx.css">
+    <link href="https://db.onlinewebfonts.com/c/72112afab388987941068c3f7a741a53?family=Mark+Pro+Heavy" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/01d273202731e44f0f1187f3afcaf156?family=Mark+Pro+Bold" rel="stylesheet">    
+    <link href="https://db.onlinewebfonts.com/c/7200c6dd8ac604abe09f5159e53a40c0?family=Mark+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/gdw7tsx.css">    
+    <link rel="stylesheet" href="https://use.typekit.net/gdw7tsx.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gdw7tsx.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gdw7tsx.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gdw7tsx.css">
+
+    <style>
+        .main-main{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        @media (min-height: 100px) and (max-height: 812px) {
+            .logo-bar{
+                top: 75%;
+            }
+            html{
+                font-size: 90%;
+            }
+            .logo-bar{
+                width: 750px;
+            }
+        }
+
+        @media (min-width: 1201px) and (max-width: 1374px) {
+            html{
+                font-size: 90%;
+            }
+            ul li{
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (min-width: 501px) and (max-width: 1200px) {
+            html{
+                font-size: 80%;
+            }
+            .projects{
+                font-size: 1.5rem;
+            }
+            ul li{
+                font-size: 1.5rem;
+            }
+        }
+
+
+        /* iPAD PRO SCREEN */
+        @media (min-height: 1366px) and (max-height: 1550px ) and (min-width: 912px) and (max-width: 1350px){
+            *{
+                animation: fade 1s;
+            }
+            html{
+                font-size: 100%;
+            }
+            html, body{
+                /* background-color: black; */
+                width: 100vw;
+                overflow: hidden !important;
+            }
+
+            .contact{
+                display: flex;
+                position: absolute;
+                right: 0;
+            }
+            
+            .nav-logo img{
+                height: 200px;
+            }
+            .copyClip{
+                display: none;
+            }
+
+            #showCopy{
+                display: block !important;
+            }
+            .header{
+                width: 95%;
+                top: 20%;
+                animation: headerDown 0s;
+            }
+            .header-title{
+                font-size: 4.8rem;
+            }
+            #projects{
+                margin-top: 20px;
+                font-size: 1.6rem;
+                height: 90px;
+                padding: 0 20px;
+                z-index: 10 !important;
+            }
+
+            .render{
+                transform: rotate(-40deg);
+                width: 75%;
+                position: absolute;
+                left: -260px;
+                top: 530px;
+                animation: hands 0s;
+            }
+            .render2{
+                display: none;
+            }
+            .renderHtml{
+                transform: rotate(-20deg);
+                width: 90%;
+                top: 380px;
+                right: -300px;
+
+                display: block;
+                position: absolute;
+                user-select: none;
+                animation: hands2 0s;
+
+                z-index: 9;
+            }
+
+            .logo-bar{
+                display: none;
+            }
+
+            /* Logos inside hand mobile */
+            .logosMobile{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                /* width: 65%; */
+
+                position: absolute;
+                top: 50%;
+                /* left: 50%; */
+                right: 50%;
+                transform: translate(-50%);
+
+                font-family: "halyard-micro-variable",sans-serif;font-variation-settings: 'wght' 530;
+                padding: 70px 15px 15px 15px;
+                /* border-radius: 15px; */
+                background-color: rgb(44, 44, 44);
+                z-index: -1;
+
+
+                /* Mi nueva implementación en fase testing (original arriba, simplemente elimina esto y quita el comment de arriba)*/
+                padding-bottom: 350px;
+                border-top-right-radius: 15px;
+                border-top-left-radius: 15px;
+                width: 90%;
+                left: 50%;
+                justify-content: center;
+            }
+
+            .item, .item img{
+                display: block;
+                width: 130px;
+                text-align: center;
+            }
+
+            .item{
+                background-color: white;
+                padding: 20px 25px;
+                font-size: 0.9rem;
+                border-radius: 15px;
+                /* box-shadow: 2px 10px 15px -10px rgb(182, 182, 182); */
+
+
+                /* Mi nueva implementación en fase testing2 (original arriba)*/
+                box-shadow: 0px 0px 25px 0px rgb(0, 0, 0);
+            }
+            
+            /* nav bar */
+            ul > li{
+                display: none;
+                align-self: center;
+            }
+
+            .empty{
+                background-color: rgba(23, 95, 158, 0);
+            }
+        }
+
+
+        /* MOBILE MEDIA QUERIES */
+
+        @media (min-width: 100px) and (max-width: 980px) {
+            *{
+                animation: fade 1s;
+            }
+
+            html, body{
+                /* background-color: black; */
+                width: 100vw;
+                overflow: hidden !important;
+            }
+
+            .nav-logo, .nav-logo img{
+                margin-left: 3% !important;
+            }
+            
+            .contact{
+                display: flex;
+                position: absolute;
+                right: 0;
+            }
+
+            .contact-icon{
+                width: 30px;
+            }
+            .contact-icon img{
+                width: 100%;
+            }
+
+            .copyClip{
+                display: none;
+            }
+
+            #showCopy{
+                display: block !important;
+            }
+
+            .header{
+                animation: headerDown 0s;
+                width: 100%;
+                top: 21%; 
+            }
+
+            .logosMobile{
+                top: 56% !important;
+                padding-top: 30px !important;
+                animation: slideUp 1s !important;
+            }
+
+            .header-title{
+                font-family: "coolvetica", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .header p {
+                margin-top: 10px !important;
+                display: block;
+                font-family: "neue-haas-grotesk-text", sans-serif;
+                font-weight: 400;
+                word-spacing: -0.2rem;
+                
+                color: grey;
+            }
+            .render{
+                top: 430px;
+                width: 40%;
+                animation: hands 0s;
+            }
+            .render2{
+                top: 430px;
+                width: 40%;
+                animation: hands2 0s;
+            }
+
+            .projects{
+                font-weight: 500;
+                margin-top: 10px !important;
+                z-index: 10 !important;
+            }
+
+            ul li{
+                font-size: 1.7rem;
+                display: none;
+            }
+
+
+            .main-part2 div{
+                height: 80%;
+                flex-basis: 345px;
+                z-index: -1;
+            }
+
+            .empty{ /* (empty item) */
+                background-color: rgb(23, 95, 158);
+            }
+
+            /* .contact2{
+                display: block;
+                z-index: 40;
+
+                position: absolute;
+                bottom: 22%;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%);
+            }
+
+            .copyClip label{
+                font-size: 2rem;
+                padding: 5px 20px;
+                opacity: 0.4;
+            }
+
+            #copyText{
+                font-size: 4rem;
+                margin-left: 5px;
+            } */
+        }
+
+        @media (min-width: 616px) and (max-width: 800px) {
+            html{
+                font-size: 70%;
+            }
+
+            .header{
+                width: 95%;
+                top: 20%;
+            }
+            #projects{
+                margin-top: 15px;
+                font-size: 1.4rem;
+                height: 50px;
+                padding: 0 10px;
+
+                z-index: 10 !important;
+            }
+
+            .render{
+                display: none;
+                transform: rotate(-50deg);
+                width: 80%;
+                position: absolute;
+                left: -130px;
+                top: 370px;
+            }
+            .render2{
+                display: none;
+            }
+            .renderHtml{
+                transform: rotate(-20deg);
+                width: 75%;
+                top: 265px;
+                left: 320px;
+
+                display: block;
+                position: absolute;
+                user-select: none;
+                /* animation: hands2 1s; */
+
+                z-index: 9;
+            }
+
+            .logo-bar{
+                display: none;
+            }
+
+            /* Logos inside hand mobile */
+            .logosMobile{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                /* width: 65%; */
+
+                position: absolute;
+                top: 50%;
+                /* left: 50%; */
+                right: 50%;
+                transform: translate(-50%);
+
+                font-family: "halyard-micro-variable",sans-serif;font-variation-settings: 'wght' 530;
+                padding: 15px;
+                /* border-radius: 15px; */
+                background-color: rgb(44, 44, 44);
+                z-index: -1;
+
+
+                /* Mi nueva implementación en fase testing (original arriba, simplemente elimina esto y quita el comment de arriba)*/
+                padding-bottom: 250px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                width: 90%;
+                left: 50%;
+                justify-content: center;
+            }
+
+            .item, .item img{
+                display: block;
+                width: 70px;
+                text-align: center !important;
+            }
+
+            .item{
+                width: 70px;
+                font-size: 0.85rem;
+                border-radius: 15px 13px;
+                padding: 10px 13px;
+                background-color: white;
+                border: 0.2px solid #eeeeeea8;
+                /* box-shadow: 2px 10px 15px -10px rgb(182, 182, 182); */
+
+
+                /* Mi nueva implementación en fase testing2 (original arriba)*/
+                box-shadow: 0px 0px 25px 0px rgb(0, 0, 0);
+            }
+
+            .empty{
+                background-color: rgba(23, 95, 158, 0);
+            }
+        }        
+
+        @media (min-width: 100px) and (max-width: 615px) {
+            html{
+                font-size: 55%;
+            }
+
+            ul > li{
+                display: none;
+                align-self: center;
+            }
+
+            #projects{
+                margin-top: 15px;
+                font-size: 1.4rem;
+                height: 50px;
+                padding: 0 10px;
+
+                z-index: 10;
+            }
+
+            .render{
+                display: none;
+                transform: rotate(-50deg);
+                width: 80%;
+                position: absolute;
+                left: -130px;
+                top: 370px;
+            }
+            .render2{
+                display: none;
+            }
+            .renderHtml{
+                transform: rotate(-20deg);
+                width: 100%;
+                top: 265px;
+                left: 155px;
+
+                display: block;
+                position: absolute;
+                user-select: none;
+                /* animation: hands2 1s; */
+
+                z-index: 9;
+            }
+
+            .logo-bar{
+                display: none;
+            }
+
+            /* Logos inside hand mobile */
+            .logosMobile{
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                /* width: 100%; */
+
+                position: absolute;
+                top: 52%;
+                /* left: 56%; */
+                right: 50%;
+                transform: translate(-50%);
+
+                padding: 15px;
+                font-family: "halyard-micro-variable",sans-serif;font-variation-settings: 'wght' 530;
+                /* border-radius: 15px; */
+                background-color: rgb(44, 44, 44);
+                z-index: -1;
+
+                /* Mi nueva implementación en fase testing (original arriba, simplemente elimina esto y quita el comment de arriba)*/
+                padding-bottom: 250px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                width: 90%;
+                left: 50%;
+                justify-content: center;
+
+            }
+
+            .item, .item img{
+                display: block;
+                width: 45px;
+                text-align: center !important;
+            }
+
+            .item{
+                width: 45px;
+                font-size: 0.85rem;
+                border-radius: 15px 13px;
+                padding: 10px 13px;
+                background-color: white;
+                border: 0.2px solid #444444;
+                /* box-shadow: 2px 10px 15px -10px rgb(182, 182, 182); */
+
+
+                /* Mi nueva implementación en fase testing2 (original arriba)*/
+                box-shadow: 0px 0px 25px 0px rgb(0, 0, 0);
+            }
+
+            .empty{
+                background-color: rgba(23, 95, 158, 0);
+            }
+
+        }       
+
+        @media (min-width: 100px) and (max-width: 360px) {
+            html{
+                font-size: 45%;
+            }
+
+            ul > li{
+                display: none;
+                align-self: center;
+            }
+
+            .renderHtml{
+                width: 115%;
+            }
+
+            .item, .item img{
+                display: block;
+                width: 40px;
+                text-align: center;
+            }
+
+            .item{
+                padding: 10px;
+                font-size: 0.8rem;
+                border-radius: 15px;
+                /* box-shadow: 2px 10px 15px -10px rgb(182, 182, 182); */
+
+
+                /* Mi nueva implementación en fase testing2 (original arriba)*/
+                box-shadow: 0px 0px 25px 0px rgb(0, 0, 0);
+            }
+
+            .empty{
+                background-color: rgba(23, 95, 158, 0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main-main">
+    
+        <div class="nav-bar">
+            <div class="nav-logo"><a href="./index.html"><img src="./resources/logo.png" alt="nasser logo"></a></div>
+            <ul>        
+
+                <li><a href="./index.html">Home</a></li>
+                <li class="work" style="cursor: pointer;"><p>Work</p></li>
+                <li class="contactBtn" style="cursor: pointer;">Contact</li>
+            </ul>
+
+            <div class="contact">
+
+                <div class="contact-icon github"><a href="https://github.com/Nasserrt" target="_blank" rel="noopener noreferrer"><img src="./resources/github.png" alt="Github Logo"></a></div>
+                <div class="copyClip">
+                    <label class="textLabel" for="copyText">businessnasser6@gmail.com</label>
+                    <button id="copyText" type="button"><i class="fa-solid fa-copy"></i></button>
+                </div>
+                <!-- Mobile settings for email copy -->
+                <button id="showCopy" type="button">
+                    <div class="copyClipMobile displayNone">
+                        <p>businessnasser6@gmail.com<p>
+                    </div>
+                    <i class="fa-regular fa-envelope icon"></i>
+                </button>
+                
+            </div>
+
+        </div>
+
+
+        <div class="header">
+            <h1 class="header-title">Coding cool ideas <br> Developing real <span>products</span></h1>
+            <p style="font-size: 2rem; margin-top: 20px;">Welcome to my portfolio</p>
+            <button id="projects">Check out my work <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+        </div>
+
+        <div class="logo-bar">
+            <div class="white"></div>
+            <div class="white2"></div>
+            <div class="logo-track" id="mycrawler2">
+
+                <div>
+                    <p>HTML</p>
+                    <img src="./resources/html.png" alt="Logo 1">                
+                </div>
+                <div>
+                    <p>CSS</p>
+                    <img src="./resources/css.png" alt="Logo 2">                
+                </div>
+                <div class="corr">
+                    <p>JavaScript</p>
+                    <img src="./resources/js.png" alt="Logo 3">                
+                </div>
+                <div>
+                    <p>jQuery</p>
+                    <img src="./resources/jQuery.png" alt="Logo 4">
+                </div>
+                <div>
+                    <p>Node.js</p>
+                    <img src="./resources/node.svg" alt="Logo 5">
+                </div>
+                <div class="corr">
+                    <p>Express.js</p>
+                    <img src="./resources/ex.png" alt="Logo 6">
+                </div>
+                <div >
+                    <p>EJS</p>
+                    <img src="./resources/ejs.png" alt="Logo 7">
+                </div>
+                <div class="python">
+                    <p>Python</p>
+                    <img src="./resources/python.png" alt="Logo 8">
+                </div>
+
+                <!-- Duplicating the content for the track -->
+
+                <div>
+                    <p>HTML</p>
+                    <img src="./resources/html.png" alt="Logo 1">                
+                </div>
+                <div>
+                    <p>CSS</p>
+                    <img src="./resources/css.png" alt="Logo 2">                
+                </div>
+                <div class="corr">
+                    <p>JavaScript</p>
+                    <img src="./resources/js.png" alt="Logo 3">                
+                </div>
+                <div>
+                    <p>jQuery</p>
+                    <img src="./resources/jQuery.png" alt="Logo 4">
+                </div>
+                <div>
+                    <p>Node.js</p>
+                    <img src="./resources/node.svg" alt="Logo 5">
+                </div>
+                <div class="corr">
+                    <p>Express.js</p>
+                    <img src="./resources/ex.png" alt="Logo 6">
+                </div>
+                <div>
+                    <p>EJS</p>
+                    <img src="./resources/ejs.png" alt="Logo 7">
+                </div>
+                <div>
+                    <p>Python</p>
+                    <img src="./resources/python.png" alt="Logo 8">
+                </div>
+
+            </div>
+        </div>
+        
+        <img class="render" src="./resources/render.png" alt="3D Hand Render">
+        <img class="render2" src="./resources/render.png" alt="3D Hand Render">
+        <img class="renderHtml" src="./resources/renderconHtml2.png" alt="3D Hand Render">
+
+
+
+        <!-- Mobile pictures -->
+        <div class="logosMobile">
+            <div class="item css">
+                <p>CSS</p>
+                <img src="./resources/css.png" alt="Logo 2">  
+            </div>
+            <div class="item corr js">
+                <p>JavaScript</p>
+                <img src="./resources/js.png" alt="Logo 3">                
+            </div>
+
+            <div class="item empty"></div>
+
+            <div class="item jquery">
+                <p>jQuery</p>
+                <img src="./resources/jQuery.png" alt="Logo 4">
+            </div>            
+            <div class="item nodejs">
+                <p>Node.js</p>
+                <img src="./resources/node.svg" alt="Logo 5">
+            </div>
+            <div class="item corr expressjs">
+                <p>Express.js</p>
+                <img src="./resources/ex.png" alt="Logo 6">
+            </div>
+            <div class="item ejs">
+                <p>EJS</p>
+                <img src="./resources/ejs.png" alt="Logo 7">
+            </div>
+            <div class="item python">
+                <p>Python</p>
+                <img src="./resources/python.png" alt="Logo 8">
+            </div>        
+        </div>
+
+        <!-- <div class="contact2">
+            <div class="copyClip">
+                <label for="copyText">businessnasser6@gmail.com</label>
+                <button id="copyText" type="button"><i class="fa-solid fa-copy"></i></button>
+            </div>                
+        </div> -->
+
+        <!-- PART 2 OF THE WEBSITE - STARTS HERE-->
+        <div class="main-part2 displayNone">
+            <div><img src="./resources/Blog Social.png" alt="Blog Social Platform"></div>
+            <div><img src="./resources/form.png" alt="Form web"></div>
+            <div><img src="./resources/ditto.png" alt="Ditto website"></div>
+            <div><img src="./resources/ditto.png" alt="Ditto website"></div>
+            <div><img src="./resources/Blog Social.png" alt="Blog Social Platform"></div>
+            <div><img src="./resources/form.png" alt="Form web"></div>
+        </div>            
+    </div>
+
+<script src="https://kit.fontawesome.com/7bb4add291.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script>
+
+    // WORK PAGE TRANSITION 
+    $("#projects, .work").click(function() {
+        $(".header").animate({top: "110px"}, 500);
+        $(".header-title").text("Here's some of my work");
+        $(".header p").text("Explore:");
+
+        $("#projects").fadeOut(300);
+        $(".render").animate({left: "-1000px"}, 500);
+        $(".render2").animate({right: "-1000px"}, 500);
+        
+        $(".renderHtml").animate({left: "50000px"}, 500);
+
+        $(".logo-bar").fadeOut(500);
+        $(".logosMobile").fadeOut(500);
+
+        $(".main-part2").toggleClass("displayNone");
+
+        // Scroll only when work is showcased
+        $("html, body").attr("style", "overflow-y: scroll !important;");    })
+
+
+    // COPY TO CLIPBOARD
+    $("#copyText").click(function() {
+
+        // copying the email
+        var email = $(".copyClip label").text();
+        navigator.clipboard.writeText("businessnasser6@gmail.com");
+
+        // animations
+        $("#copyText i").removeClass("fa-solid fa-copy");
+        $("#copyText i").addClass("fa-solid fa-check");
+
+        $(".copyClip label").text("Copied!");
+        $("ul").css("marginLeft", "-1px");
+
+        setTimeout(function() {
+            $("#copyText i").removeClass("fa-solid fa-check").addClass("fa-solid fa-copy");
+
+            // Revert the label text and the margin adjustment
+            $(".textLabel").text("businessnasser6@gmail.com");
+            $("ul").css("marginLeft", "");
+        }, 1500);
+    });
+
+
+    // SHAKE AND ROTATE THE ELEMENT
+    $(".contactBtn").click(function() {
+
+        let $element = $(".contact");
+        $element
+            .animate({rotate: '5deg'}, {
+                duration: 100,
+                step: function(now, fx) {
+                    $(this).css('transform', 'rotate(' + now + ')');
+                }
+            })
+            .animate({rotate: '-5deg'}, {
+                duration: 100,
+                step: function(now, fx) {
+                    $(this).css('transform', 'rotate(' + now + ')');
+                }
+            })
+            .animate({rotate: '5deg'}, {
+                duration: 100,
+                step: function(now, fx) {
+                    $(this).css('transform', 'rotate(' + now + ')');
+                }
+            })
+            .animate({rotate: '-5deg'}, {
+                duration: 100,
+                step: function(now, fx) {
+                    $(this).css('transform', 'rotate(' + now + ')');
+                }
+            })
+            .animate({rotate: '5deg'}, {
+                duration: 100,
+                step: function(now, fx) {
+                    $(this).css('transform', 'rotate(' + now + ')');
+                }
+            })
+            .animate({rotate: '0deg'}, {
+                duration: 100,
+                step: function(now, fx) {
+                    $(this).css('transform', 'rotate(' + now + ')');
+                }
+            });
+        });
+
+    // COPY TO CLIPBOARD MOBILE
+    $("#showCopy").click(function() {
+        $(".copyClipMobile").removeClass("displayNone");
+        $(".icon").removeClass("fa-regular fa-envelope").addClass("fa-solid fa-copy");
+
+        // copying the email mobile
+        $(".copyClipMobile, #showCopy i").click(function() {
+            navigator.clipboard.writeText("businessnasser6@gmail.com");
+
+            $(".copyClipMobile").text("Copied");
+            $(".icon").removeClass("fa-solid fa-copy").addClass("fa-solid fa-check");
+        });
+
+        setTimeout(function() {
+            $(".copyClipMobile").addClass("displayNone");
+            $(".copyClipMobile").text("businessnasser6@gmail.com");
+            $(".icon").removeClass("fa-solid fa-check fa-solid fa-copy").addClass("fa-regular fa-envelope");
+        }, 2000)
+    });
+
+</script>
+</html>
